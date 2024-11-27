@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Visualizations</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <!-- Line Chart Section -->
+  <h1>Line Chart: Stock Performance</h1>
+  <div id="line-chart"></div>
+  <label for="company-selector">Select a Company:</label>
+  <select id="company-selector"></select>
+
+  <!-- Scatter Plot Section -->
+  <h1>Scatter Plot: Compare Metrics</h1>
+  <div id="scatter-plot"></div>
+  <label for="x-axis">X-Axis:</label>
+  <select id="x-axis">
+    <option value="high_mean">High (Mean)</option>
+    <option value="low_mean">Low (Mean)</option>
+    <option value="volume_mean">Volume (Mean)</option>
+    <option value="adj_close_mean">Adjusted Close (Mean)</option>
+  </select>
+  <label for="y-axis">Y-Axis:</label>
+  <select id="y-axis">
+    <option value="high_mean">High (Mean)</option>
+    <option value="low_mean">Low (Mean)</option>
+    <option value="volume_mean">Volume (Mean)</option>
+    <option value="adj_close_mean">Adjusted Close (Mean)</option>
+  </select>
+
+  <!-- Link the JavaScript Files -->
+  <script src="line_chart.js"></script>
+  <script src="scatter_plot.js"></script>
+</body>
+</html>
